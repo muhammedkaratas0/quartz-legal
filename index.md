@@ -79,7 +79,7 @@ We may update this policy; the "Effective date" above will be revised.
 
 ## 8. Contact
 
-Questions or deletion requests: **hangiislam0@gmail.com**
+Questions or deletion requests: **hello@quartzapps.com**
 
 ---
 
