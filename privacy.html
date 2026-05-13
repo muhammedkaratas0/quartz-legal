@@ -18,7 +18,7 @@
 <body>
 
 <h1>Quartz — Privacy Policy</h1>
-<p class="effective">Effective date: May 2, 2026</p>
+<p class="effective">Effective date: May 6, 2026</p>
 
 <p>This Privacy Policy describes how Quartz (“we”, “us”, “our”) collects, uses, and shares
 information when you use the Quartz mobile application (the “App”). By using the App you
@@ -30,17 +30,24 @@ agree to the collection and use of information in accordance with this policy.</
       email address and an encrypted password, or, if you sign in with Apple, the
       identifier provided by Apple. You may optionally provide a display name.</li>
   <li><strong>Watch photos you submit.</strong> When you scan a watch we temporarily
-      receive the captured image to identify the model. Images are processed by our AI
-      provider, are not used to train any model, and are deleted from our servers after
-      identification.</li>
+      receive the captured image to identify the model. The image is processed by
+      Quartz and trusted AI / vision providers such as Groq and Google Cloud Vision.
+      Images are used only to return your scan result, are not used by Quartz to train
+      AI models, and are deleted from our servers after identification except for
+      short-lived diagnostic records described below.</li>
   <li><strong>Collection data.</strong> Watches you save to your collection, archive, or
       wishlist, along with timestamps.</li>
   <li><strong>Subscription status.</strong> If you purchase a subscription we receive
       your subscription state from RevenueCat (active / expired / cancelled). We do not
       receive your payment card data — Apple handles billing.</li>
-  <li><strong>Diagnostic data.</strong> Crash reports and basic technical events
-      (e.g. failed scans) so we can improve the App. These are not linked to identifiable
-      personal information beyond your user ID.</li>
+  <li><strong>Product analytics and device data.</strong> We collect app interaction
+      events such as app opens, scan starts, successful scans, paywall views, purchases,
+      device type, app version, and coarse location derived from network data. We use
+      this to understand and improve the App, not for advertising or tracking across
+      other apps or websites.</li>
+  <li><strong>Diagnostic data.</strong> Crash reports, scan matching logs, candidate
+      matches, and failed-scan details so we can improve reliability. These records may
+      be linked to your Quartz user ID while your account exists.</li>
 </ul>
 <p>We do not collect contacts, precise location, microphone audio, health data, or
    browsing activity outside the App.</p>
@@ -60,10 +67,17 @@ agree to the collection and use of information in accordance with this policy.</
   <li><strong>Supabase</strong> — authentication, database, file storage.</li>
   <li><strong>Apple</strong> — Sign in with Apple, App Store payments.</li>
   <li><strong>RevenueCat</strong> — subscription state and receipt validation.</li>
-  <li><strong>Anthropic (Claude)</strong> — vision model used to identify watches in
-      submitted photos.</li>
+  <li><strong>Amplitude</strong> — product analytics and app interaction events.</li>
+  <li><strong>Groq</strong> — AI model used to identify watches in submitted photos.</li>
+  <li><strong>Google Cloud Vision</strong> — visual search / image understanding used
+      as part of watch identification.</li>
+  <li><strong>Firecrawl</strong> — public web retrieval for watch reference and market
+      enrichment. We send watch-related queries, not personal account data.</li>
   <li><strong>eBay Browse API</strong> — public market data used to compute reference
       prices. We send only the watch reference, never any personal data.</li>
+  <li><strong>Wikimedia Commons and other public sources</strong> — public reference
+      images and attribution metadata used for editorial watch or celebrity context
+      where available.</li>
 </ul>
 <p>These providers are bound by their own privacy and security obligations and may only
    use information for the purposes we authorise.</p>
@@ -71,14 +85,21 @@ agree to the collection and use of information in accordance with this policy.</
 <h2>4. Data retention</h2>
 <p>We keep your account information and collection for as long as your account exists.
    Submitted scan images are retained only for the duration of the identification
-   request and are then deleted. Diagnostic logs are kept for up to 30 days.</p>
+   request and are then deleted. Diagnostic logs tied to your account are deleted
+   when you delete your account. Aggregated or de-identified operational metrics may
+   be retained for product analytics and abuse prevention.</p>
 
 <h2>5. Account deletion</h2>
 <p>You can delete your account directly inside the App at any time:
    <em>Profile → Settings → Delete Account</em>. Deletion permanently removes your
-   account, your collection, your scan history, and all other data we hold about you.
-   This action is immediate and cannot be undone. Apple receipts retained for legal
-   reasons under Apple’s policies are out of our control.</p>
+   account, your collection, your scan history, pending scan candidates, user-linked
+   scan diagnostics, and other Quartz data tied to your user ID. This action is
+   immediate and cannot be undone. Deleting your Quartz account does not cancel an
+   active App Store subscription; manage subscriptions in your Apple ID settings.
+   If you used Sign in with Apple, you can also revoke Quartz from
+   <em>Apple ID Settings → Sign-In &amp; Security → Sign in with Apple</em>.
+   Apple receipts retained for legal reasons under Apple’s policies are out of our
+   control.</p>
 
 <h2>6. Children</h2>
 <p>Quartz is not directed to children under 13 (or the age of digital consent in your
